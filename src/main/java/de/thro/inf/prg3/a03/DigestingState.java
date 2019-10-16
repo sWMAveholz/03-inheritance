@@ -4,12 +4,12 @@ import java.util.logging.Logger;
 
 public class DigestingState extends State {
 
-    public DigestingState( int t, int duration) {
-        super( t, duration);
+    public DigestingState(  int duration) {
+        super( duration);
     }
 
     @Override
     State successor(Cat cat) {
-        return null;
+        return new PlayfulState(0);
     }
 }

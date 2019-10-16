@@ -3,12 +3,12 @@ package de.thro.inf.prg3.a03;
 import java.util.logging.Logger;
 
 public class PlayfulState extends State {
-    public PlayfulState(int t, int duration) {
-        super( t, duration);
+    public PlayfulState( int duration) {
+        super( duration);
     }
 
     @Override
     State successor(Cat cat) {
-        return null;
+        return new SleepingState(cat.getSleep());
     }
 }

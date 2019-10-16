@@ -5,13 +5,17 @@ import java.util.logging.Logger;
 public class HungryState extends State {
 
 
-    public HungryState( int t, int duration) {
-        super( t, duration);
+    public HungryState(  int duration) {
+        super(  duration);
+    }
+
+    State feed(Cat cat){
+        return new DigestingState(cat.getDigest());
     }
 
     @Override
     State successor(Cat cat) {
-        return null;
+        return new DeathState(50);
     }
 
     //State feed(Animal a)
