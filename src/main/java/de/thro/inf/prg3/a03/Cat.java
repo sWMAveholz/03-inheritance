@@ -6,13 +6,13 @@ import org.apache.logging.log4j.Logger;
 import static de.thro.inf.prg3.a03.Cat.State.*;
 
 public class Cat {
-	private static final Logger logger = LogManager.getLogger();
+	//private static final Logger logger = LogManager.getLogger();
 
 	// valid states
-	public enum State {SLEEPING, HUNGRY, DIGESTING, PLAYFUL, DEAD}
+	//public enum State {SLEEPING, HUNGRY, DIGESTING, PLAYFUL, DEAD}
 
 	// initially, animals are sleeping
-	private State state = State.SLEEPING;
+	//private State state = State.SLEEPING;
 
 	// state durations (set via constructor), ie. the number of ticks in each state
 	private final int sleep;
